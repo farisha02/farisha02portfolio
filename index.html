@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+          <ul id="sidemenu"> 
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img align="right" src="pp.png" alt="" width="500" height="auto">
+        <div class="header-text">
+          <p>Hello,</p>
+          <h1>I'm <span>Farisha</span><br>student of UniSZA</h1>
+        </div>
+      </div>
+    </div>    
+  <!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="passport.png" alt="Passport Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Background')">Background</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="Background">
+                    <ul>
+                        <li><span>Full Name</span><br>Nurul Farisha Binti Ahmad Tajuddin</li>
+                        <li><span>Age</span><br>21 years old</li>
+                        <li><span>Live</span><br>Kedah</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Primary</span><br>Sekolah Kebangsaan Ayer Puteh</li>
+                        <li><span>Secondary</span><br>Sekolah Menengah Kebangsaan Pendang</li>
+                        <li><span>Tertiary</span><br>Universiti Sultan Zainal Abidin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-----------portfolio---------->
+ <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="work1.png">
+        <div class="layer">
+          <h3>SISTEM PENDAFTARAN KURSUS</h3>
+          <p>Crafted to streamline the enrollment procedure for academic courses within an educational establishment, this platform acts as a centralized hub enabling students to peruse course offerings, enroll in classes, and oversee their academic timetables.</p>
+          <a href="http://localhost:8080/sistemPendaftaranKursus/index.html"><i class='font-size:20px;'>&#128279;</i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="pic2.png">
+        <div class="layer">
+          <h3>PORTFOLIO WEBSITE</h3>
+          <p>Displaying my skills and projects on my individual portfolio site, the web design incorporates HTML, CSS, and JavaScript to enhance interactivity. It comprises segments like an introductory section, a personal bio, project highlights, and a contact form.</p>
+          <a href="http://localhost:8080/portfolio/index.html#portfolio"><i class='font-size:20px;'>&#128279;</i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="p2.png">
+        <div class="layer">
+          <h3>EMPORIUM EAST COAST</h3>
+          <p>An innovative business committed to providing top-notch products and outstanding customer service through our online store. We possess the drive and capability to consistently enhance and update the digital shopping journey.</p>
+          <a href="https://nurulnazurah2001.wixsite.com/emporium-east-coast"><i class='font-size:20px;'>&#128279;</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <!--------------contact----------------->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <span style='font-size:17px;'>&#128231;</span>nrulfarisha02@gmail.com</p> 
+        <span style='font-size:17px;'>&#128222;</span>011125412986</p>
+        <div class="Social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61553944294113" class="fab fa-facebook"></a>
+          <a href="https://x.com/picacoco02/" class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com/invites/contact/?i=gso184vd0kqg&utm_content=44x0jv9" class="fab fa-instagram"></a>
+          <a href="https://github.com/farisha02" class="fab fa-github"></a>
+        </div>
+       
+      </div>
+      <div class="contact-right">
+        <form> 
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+ <script src="newjavascript.js"></script>
+   </body>
+</html>
+
+
